@@ -1,11 +1,22 @@
 <div id="corpo-dados">
 
-    <mat-form-field>
-        <mat-label>Filter</mat-label>
-        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
-    </mat-form-field>
+    <div id="filtro">
+        <mat-form-field>
+            <mat-label>Filtro</mat-label>
+            <input 
+                matInput 
+                (keyup)="applyFilter($event)" 
+                placeholder="Digite um valor ou texto para filtrar os registros" 
+                #input
+            >
+        </mat-form-field>
+    </div>
     
     <div class="mat-elevation-z8">
+
+        <div  id="aviso">
+            <p>Clique nas imagens para ver os detalhes</p>
+        </div>
     
         <section class="example-container mat-elevation-z8" tabindex="0">
 

@@ -1,3 +1,4 @@
+
 table {
     width: 100%;
 }
@@ -11,8 +12,18 @@ td, th {
     width: 25%;
 }
 
+#filtro {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#aviso {
+    text-align: center;
+    margin: 0 auto;
+}
+
 .example-container {
-    height: 74vh;
+    height: 70vh;
     overflow: auto;
 }
 
