@@ -17,12 +17,16 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ImageDialogComponent } from './views/home/image-dialog/image-dialog.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TabelaComponent
+    TabelaComponent,
+    ImageDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatPaginatorModule,
     MatSortModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    MatCardModule
   ],
   providers: [
     provideAnimationsAsync()
